@@ -1,0 +1,19 @@
+<html>
+
+        <body ng-app="fullNameApp">
+                <div ng-controller="fullNameController" $scope.firstName = 'Sander';
+                $scope.lastName = 'Rossel';>
+                    <p>Enter you name:
+                        <input type="text" ng-model="firstName" />
+                        <input type="text" ng-model="lastName" />
+                    </p>
+                    <p>You have entered: {{ fullName() }}</p>
+                </div>
+             
+   <div ng-repeat="album in favoriteAlbums">
+        <input type="text" ng-model="album.artist" />
+        <input type="text" ng-model="album.title" />
+    </div>
+    <button ng-click="favoriteAlbums.push({})">New album</button>
+</body>
+</html>
